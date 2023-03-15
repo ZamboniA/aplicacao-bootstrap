@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Aplicação de BOOTSTRAP</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/wolf.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="./img/wolf.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="logo" src="./img/wolf.png" alt=""></a>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">wolf</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://pt.wikipedia.org/wiki/Lobo_(esp%C3%A9cies)"
+                                    target="_blank">Wikipédia</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Lobos verdadeiros
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./lobo-cinza.html">Lobo-cinza</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./lobo-vermelho.html">Lobo-vermelho</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./lobo-etiope.html">Lobo-etiope</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./lobo-dourado.html">Lobo-dourado</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Lobos falsos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./lobo-da-terra.html">Lobo-da-terra</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./lobo-guara.html">Lobo-guará</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./lobo-tasmania.html">Lobo-da-tasmânia</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./lobo-marinho.html">Lobo-marinho</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- carousel and cards-->
+    <main>
+        <div class="container">
+            <!-- carousel -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./img/wolf-look-wallpaper-2560x1080_14.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/white-wolf-wallpaper-2560x1080_14.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gray-wolf-resting-wallpaper-2560x1080_14.jpg" class=" d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- cards -->
+            <div class="cards d-flex row justify-content-around">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/lobo-uivando.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Eles se parecem com os cães domésticos, mas têm hábitos bem diferentes –
+                            vivem em grupos (as alcateias) e são ótimos caçadores ... </p>
+                    </div>
+
+                    <a href="https://recreio.uol.com.br/noticias/zoo/7-curiosidades-que-talvez-voce-nao-sabia-sobre-os-lobos.phtml"
+                        class="card-link" target="_blank">
+                        <button type="button" class="btn botao-link">
+                            Continue lendo aqui
+                        </button>
+
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/lobo-comendo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">O termo lobo, de forma geral, é usado para se referir à espécie Canis
+                            lupus, também chamada de lobo cinzento...</p>
+                    </div>
+                    <a href="https://www.preparaenem.com/biologia/lobo.htm" class="card-link" target="_blank">
+                        <button type="button" class="btn botao-link">
+                            Continue lendo aqui
+                        </button>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/lobos-wisconsin.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Em menos de três dias, mais de 200 lobos são mortos por caçadores no estado
+                            de Wisconsin, nos EUA
+                        </p>
+                    </div>
+                    <a href="https://conexaoplaneta.com.br/blog/em-menos-de-tres-dias-mais-de-200-lobos-sao-mortos-por-cacadores-no-estado-de-wisconsin-nos-estados-unidos/"
+                        class="card-link" target="_blank">
+                        <button type="button" class="btn botao-link">
+                            Continue lendo aqui
+                        </button>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem; ">
+                    <img src="./img/ltZ27k5.jpeg" style="height: 10rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">O lobo-do-ártico, também conhecido como lobo-polar, é uma subespécie do
+                            lobo-cinzento, e seu nome científico é Canis lupus arctos. Pertence à ordem ...</p>
+                    </div>
+                    <a href="#" class="card-link" target="_blank">
+                        <button type="button" class="btn botao-link">
+                            Continue lendo aqui
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-5 d-flex justify-content-center row">
+                <div class="col-sm-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/got.jpg" alt="" class="card-img-top">
+                            <h5 class="card-title d-flex justify-content-center">
+                                Os lobos pré-históricos (aqueles de Game of Thrones) eram bem diferentes dos atuais
+                            </h5>
+                            <p class="card-text">Quem assistiu a Game of Thrones vai se lembrar: no começo da primeira
+                                temporada, cada filho de Ned Stark (Sean Bean) ganhou um lobo gigante. O animal,
+                                presente no brasão da família, era inteligente, e servia tanto como bicho de estimação
+                                quanto como protetor.
+                            </p>
+                            <a href="#" class="" target="_blank">
+                                <button type="button" class="btn botao-link">
+                                    Continue lendo aqui
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-5">
+            <p class="col-md-4 mb-0">Página desenvolvida por <b>Anderson Zamboni</b></p>
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="https://github.com/ZamboniA" class="nav-link"><img
+                            src="./img/icon-github.png" alt="" class="img-icon-git"> Github</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/" class="nav-link "><img
+                            src="./img/icon-linkdedin.png" class="img-icon"> Linkedin</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/andersonzamboni1/" class="nav-link"><img
+                            src="./img/icon-insta.png" class="img-icon"> Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
